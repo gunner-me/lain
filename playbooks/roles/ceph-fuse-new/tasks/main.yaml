@@ -26,4 +26,4 @@
   file: path=/etc/rc.d/rc.local mode=0755
 
 - name: edit rc.local
-  lineinfile: dest=/etc/rc.local line="ceph-fuse -n {{ceph_account}} -r {{ceph_mountpoint}} {{client_mountpoint}}" insertafter=EOF
+  lineinfile: dest=/etc/rc.local line="ceph-fuse -n {{ceph_account}} -r {{ceph_mountpoint}} {{client_mountpoint}}"
